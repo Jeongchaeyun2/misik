@@ -1,0 +1,63 @@
+@charset "utf-8";
+
+.sub_visual {text-align: center; color: #fff; background: url("../images/sub/bg_sub1.jpg") no-repeat center center / cover;}
+.sub_visual .sub_txt {padding: 330px 0 190px;}
+
+
+.sub_txt h2 {font-family: var(--sub-font); color: #fff; font-size: 8rem; font-weight: 400;}
+.sub_txt p {position: relative; padding-top: 50px; font-size: 2rem;}
+.sub_txt p::before {content: ""; width: 1px; height: 30px; background: #fff; position: absolute; left: 50%; top: 0;}
+
+
+
+/* brand story */
+.brand_story {border-bottom: 1px solid #eee;}
+.brand_story .inner h3 {font-size: 4rem; text-align: center; margin: 100px 0;}
+
+.brand_story .inner {max-width: 1440px;}
+.brand_story .inner > div {display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;}
+
+.brand_story .brand_txt span {position: relative; display: inline-block; font-family: var(--sub-font); font-size: 6rem; font-weight: 700; color: var(--main-color);}
+.brand_story .brand_txt span::before { content: ""; width: calc(100% + 20px); height: 20px; background: rgba(194,122,52,0.2); position: absolute; left: -5px; bottom: 10px; transform: skewX(-10deg);}
+.brand_story .brand_txt h4 { font-size: 4rem; font-weight: 500; padding: 50px 0 10px; font-family: var(--sub-font); }
+.brand_story .brand_txt p { color: #666; font-size: 1.8rem; padding: 10px 0 0; }
+.story_4 {margin-bottom: 200px;}
+
+ .brand_img img {width: 100%; display: block;}
+
+.story_1 .brand_img {width: 40%;}
+.story_1 .brand_txt {width: 50%;}
+
+.story_2 .brand_img {width: 40%;}
+.story_2 .brand_txt {width: 40%;}
+
+.story_3 .brand_img {width: 50%;}
+.story_3 .brand_txt {width: 40%;}
+
+.story_4 .brand_img {width: 30%;}
+.story_4 .brand_txt {width: 50%;}
+
+@media (max-width:1200px) {
+  .brand_story .inner h3 {font-size: 3.5rem;}
+  .brand_story .brand_txt span {font-size: 4.5rem;}
+  .brand_story .brand_txt h4 { font-size: 3rem; padding: 40px 0 10px;}
+.brand_story .brand_txt p {font-size: 1.6rem; }
+}
+
+@media (max-width:900px) {
+  .brand_story .inner h3 {margin: 50px 0;}
+  .brand_story .brand_img {width: 100%;}
+  .brand_story .brand_txt {width: 100%; padding-bottom: 50px;}
+  .story_2 , .story_4 { flex-wrap: wrap-reverse !important;}
+.story_4 {margin-bottom: 80px;}
+
+}
+
+@media (max-width:768px) {
+  .brand_story .inner h3 {font-size: 3rem;}
+  .brand_story .brand_txt span {font-size: 3rem;}
+  .brand_story .brand_txt h4 { font-size: 2rem; padding: 30px 0 0;}
+.brand_story .brand_txt p {font-size: 1.4rem;}
+.story_4 {margin-bottom: 30px;}
+
+}
